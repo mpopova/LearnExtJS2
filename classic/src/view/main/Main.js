@@ -83,11 +83,12 @@ Ext.define('Latest.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
+        title: 'Ships',
+        iconCls: 'fa-ship',
+        items: [{
+            xtype: "shipList"
         }
+        ]
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
