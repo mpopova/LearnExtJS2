@@ -22,6 +22,6 @@ Ext.define('Latest.view.main.ListShips', {
     ],
 
     listeners: {
-        select: 'onItemSelected'
+        select: 'onPopupForm'
     }
 });

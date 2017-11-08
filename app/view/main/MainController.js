@@ -13,6 +13,46 @@ Ext.define('Latest.view.main.MainController', {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },
 
+    onPopupForm: function (sender, record) {
+        var window;
+        // Ext.create('Ext.window.Window');
+        window = Ext.create('Ext.window.Window', {
+            title: 'Update Record',
+            width: 400,
+            floating: true,
+            centered: true,
+            modal: true,
+
+            items: [{
+                xtype: 'textfield',
+                name: 'ship_name',
+                label: 'ship_name',
+                bind: '{ship.ship_name}'
+            }, {
+                xtype: 'textfield',
+                name: 'ship_name',
+                label: 'ship_name',
+                bind: '{ship_name}'
+
+            }, {
+                xtype: 'toolbar',
+                docked: 'bottom',
+                items: ['->', {
+                    xtype: 'button',
+                    text: 'Submit',
+                    iconCls: 'x-fa fa-check',
+                    // handler: 'submitUpdate'
+                }, {
+                    xtype: 'button',
+                    text: 'Cancel',
+                    iconCls: 'x-fa fa-close',
+                    // handler: 'cancelUpdate'
+                }]
+            }]
+        });
+        window.show();
+    },
+
     onConfirm: function (choice) {
         if (choice === 'yes') {
             //
