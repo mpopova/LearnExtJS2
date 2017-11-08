@@ -7,3 +7,5 @@
 /nbproject/*
 /nbproject
 .DS_Store
+*.log
+.idea
