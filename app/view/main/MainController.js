@@ -1,9 +1,3 @@
-/**
- * This class is the controller for the main view for the application. It is specified as
- * the "controller" of the Main view class.
- *
- * TODO - Replace this content of this view to suite the needs of your application.
- */
 Ext.define('Latest.view.main.MainController', {
     extend: 'Ext.app.ViewController',
 
@@ -16,7 +10,6 @@ Ext.define('Latest.view.main.MainController', {
     onPopupForm: function (sender, record) {
         var window = Ext.create('Latest.view.ship.Window');
         window.show();
-        console.log(window);
     },
 
     onConfirm: function (choice) {
