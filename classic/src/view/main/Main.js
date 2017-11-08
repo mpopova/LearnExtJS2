@@ -18,7 +18,7 @@ Ext.define('Latest.view.main.Main', {
         'Latest.view.main.List',
         'Latest.view.main.ListShips',
         // 'Latest.view.ship.ShipController',
-        'Latest.view.ship.PopupForm'
+        'Latest.view.ship.Window'
     ],
 
     controller: 'main',

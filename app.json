@@ -528,7 +528,7 @@
         },
 
         "modern": {
-            "toolkit": "modern",
+            "toolkit": "classic",
             "theme": "theme-triton",
             "sass": {
                 "generated": {
