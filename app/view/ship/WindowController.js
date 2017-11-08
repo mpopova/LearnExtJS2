@@ -2,7 +2,7 @@ Ext.define('Latest.view.sh.MainController', {
     extend: 'Ext.app.ViewController',
 
     alias: 'controller.windowShip',
-    controller_scope: this,
+
     onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },

@@ -11,7 +11,7 @@ Ext.define('Latest.view.ship.Window', {
         xtype: 'textfield',
         name: 'ship_name',
         fieldLabel: 'Name of ship',
-        fieldBind: '{ship.ship_name}'
+        bind: '{ship.ship_name}'
     }, {
         xtype: 'textfield',
         name: 'ship_name',
