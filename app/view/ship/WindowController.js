@@ -13,8 +13,6 @@ Ext.define('Latest.view.sh.MainController', {
     },
 
     submitUpdate: function (sender, record) {
-        console.log(this);
-        debugger;
         sender.up('window[name=shipWindow]').close();
     },
 
