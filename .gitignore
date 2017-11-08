@@ -9,3 +9,5 @@
 .DS_Store
 *.log
 .idea
+classic.json
+classic.jsonp
